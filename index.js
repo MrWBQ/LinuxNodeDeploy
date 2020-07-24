@@ -25,7 +25,7 @@ app.get('/*',function(req,res,next){
   res.header('X-Content-Type-Options',"nosniff");
   res.header('X-Frame-Options',"sameorigin");
   res.header('Cache-Control',"private,max-age=31536000");
-  res.header('Content-Security-Policy',"default-src 'self' 'unsafe-eval' 'unsafe-inline' *.accenture.com; script-src 'self' 'unsafe-inline' 'unsafe-eval'; img-src 'self' *.accenture.com data:; connect-src 'self' *.accenture.com");
+  res.header('Content-Security-Policy',"");
   res.header('Referrer-Policy',"no-referrer");
   res.header('Feature-Policy','none');
   next(); // http://expressjs.com/guide.html#passing-route control
